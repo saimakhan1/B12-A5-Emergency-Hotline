@@ -117,10 +117,13 @@ body {
 /**************Responsive Design*********************************/
 @media screen and (max-width: 576px) {
   .cardCollection {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: 1fr !important;
   }
-  .card {
-    width: 100%;
+  .mh {
+    display: flex;
+    flex-direction: column;
+  }
+  .callHistory {
+    margin-top: 20px;
   }
 }
