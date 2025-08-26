@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+/*************************************/
+.navbar {
+  /*   background-color: #41ff6b; */
+  background-color: rgba(65, 255, 107, 0.2); /* 0.2 = 20% opacity */
+
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  padding: 24px 60px;
+}
+
+.navbarLeft {
+  display: flex;
+}
+.navbarRight {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
