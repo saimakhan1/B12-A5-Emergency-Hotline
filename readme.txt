@@ -1,4 +1,4 @@
-Assignment 5- readme.md (Questions and Answers)
+Assignment 5- readme.txt
 _________________________________________________________________________________________________
 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 answer 1: 
