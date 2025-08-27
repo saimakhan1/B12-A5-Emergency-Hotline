@@ -17,7 +17,7 @@ body {
 
   display: flex;
   justify-content: space-between;
-
+  gap: 10px;
   padding: 24px 70px;
 
   height: 30px;
@@ -28,7 +28,7 @@ body {
   align-items: center;
 }
 .header-left img {
-  height: 120%;
+  height: 170%;
 }
 .header-right {
   display: flex;
@@ -49,13 +49,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 60px;
-  padding: 40px 35px;
+  height: 80px;
+  padding: 60px 35px;
   color: white;
+  line-height: 2.1;
 }
 
 .hero img {
-  max-height: 70%;
+  max-height: 100%;
 }
 
 /*************main section*********************/
@@ -69,8 +70,8 @@ body {
 }
 .card {
   height: 220px;
-  width: 300px;
-  padding: 10px;
+  width: 280px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 5px gray;
 }
