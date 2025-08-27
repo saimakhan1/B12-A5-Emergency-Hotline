@@ -139,12 +139,12 @@ body {
   }
 
   .hero {
-    height: 120px;
-    padding: 60px 35px;
+    height: 190px;
+    padding: 20px 10px;
   }
 
   .hero img {
-    max-height: 50%;
+    height: 40%;
   }
   .mh {
     padding: 30px 5px;
@@ -181,12 +181,12 @@ body {
   }
 
   .hero {
-    height: 250px;
-    padding: 15px 5px;
+    height: 270px;
+    padding: 25px 5px;
   }
   .hero img {
-    height: 20%;
-    width: 20% !important;
+    height: 30%;
+    width: 25% !important;
   }
   .card {
     width: 260px;
