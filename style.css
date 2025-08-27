@@ -98,7 +98,14 @@ body {
   justify-content: center;
   background-color: #ffe3e2;
 }
-
+.greenCall:hover {
+  background-color: gray !important;
+  color: white;
+}
+.copyClass:hover {
+  background-color: black;
+  color: white;
+}
 .callHistory {
   width: 300px;
   box-shadow: 0px 0px 5px gray;

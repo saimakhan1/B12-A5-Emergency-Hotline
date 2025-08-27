@@ -77,9 +77,9 @@ function callAlert(id) {
   console.log(callHistoryList);
   const callHistoryRecord = document.getElementById("callHistoryRecord");
   const div = document.createElement("div");
-  div.style.backgroundColor = "#ecf0f1";
+  div.style.backgroundColor = " #f5f6fa";
   div.style.margin = "3px";
-  div.style.marginTop = "10px";
+  div.style.marginTop = "15px";
   div.style.padding = "5px";
   div.innerHTML = `
    <div style="display:flex ;align-items:center; justify-content: space-between">
