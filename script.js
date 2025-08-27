@@ -20,7 +20,10 @@ let coinCount = parseInt(coinCountFinal.innerText);
 
 for (const call of greenCall) {
   call.addEventListener("click", function (event) {
-    if (coinCount < 20) alert("call not possible");
+    if (coinCount < 20)
+      alert(
+        "You don't have enough balance to call. To make a successful call, you need at least 20 coins. "
+      );
     else {
       coinCount = coinCount - 20;
       //alert(coinCount);
