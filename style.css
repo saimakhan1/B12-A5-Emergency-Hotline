@@ -14,12 +14,10 @@ body {
 .navbar {
   /*   background-color: #41ff6b; */
   background-color: white; /* 0.2 = 20% opacity */
-
   display: flex;
   justify-content: space-between;
   gap: 10px;
   padding: 24px 70px;
-
   height: 30px;
 }
 
@@ -134,15 +132,66 @@ body {
 
 /**************Responsive Design*********************************/
 @media screen and (max-width: 576px) {
+  .navbar {
+    padding: 20px 5px;
+  }
+
+  .hero {
+    height: 120px;
+    padding: 60px 35px;
+  }
+
+  .hero img {
+    max-height: 50%;
+  }
+  .mh {
+    padding: 30px 5px;
+    margin: 0 auto;
+  }
   .cardCollection {
     grid-template-columns: 1fr !important;
+    justify-content: center !important;
   }
   .mh {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .callHistory {
     margin-top: 20px;
-    width: 300px;
+    width: 290px;
+  }
+}
+/***********smaller screen mobile************/
+@media screen and (max-width: 400px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: center;
+    padding: 5px 5px;
+  }
+  .header-left {
+    margin: 0 auto;
+  }
+  .header-left img {
+    width: 30% !important;
+    height: 60%;
+  }
+
+  .hero {
+    height: 250px;
+    padding: 15px 5px;
+  }
+  .hero img {
+    height: 20%;
+    width: 20% !important;
+  }
+  .card {
+    width: 260px;
+  }
+  .callHistory {
+    margin-top: 20px;
+    width: 270px;
   }
 }
