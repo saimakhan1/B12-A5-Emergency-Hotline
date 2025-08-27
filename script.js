@@ -17,7 +17,7 @@ const coinCountFinal = document.getElementById("coinCountFinal");
 //let coinCount = 100;
 let coinCount = parseInt(coinCountFinal.innerText);
 //console.log("initial coin count is: " + coinCount);
-
+let callHistoryList = [];
 for (const call of greenCall) {
   call.addEventListener("click", function (event) {
     if (coinCount < 20)
@@ -65,4 +65,31 @@ function callAlert(id) {
   const pText = parentDiv.querySelector("p")?.innerText || "";
 
   alert("📞Calling " + pText + " " + h2Text + "...");
+
+  //call history
+  const data = {
+    service: pText,
+    cellNo: h2Text,
+    date: new Date().toLocaleTimeString(),
+  };
+
+  callHistoryList.push(data);
+  console.log(callHistoryList);
+  const callHistoryRecord = document.getElementById("callHistoryRecord");
+  const div = document.createElement("div");
+  div.style.backgroundColor = "#ecf0f1";
+  div.style.margin = "3px";
+  div.style.marginTop = "10px";
+  div.style.padding = "5px";
+  div.innerHTML = `
+   <div style="display:flex ;align-items:center; justify-content: space-between">
+    <div>
+        <p>${data.service}</p>
+        <p>${data.cellNo}</p>
+    </div>
+
+    <div> <p>${data.date}</p></div>
+   </div>
+    `;
+  callHistoryRecord.appendChild(div);
 }
