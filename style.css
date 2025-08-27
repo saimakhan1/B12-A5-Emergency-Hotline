@@ -120,6 +120,9 @@ body {
   justify-content: center;
   background-color: #dfefff;
 }
+.callHistory {
+  background-color: white;
+}
 
 /**************Responsive Design*********************************/
 @media screen and (max-width: 576px) {

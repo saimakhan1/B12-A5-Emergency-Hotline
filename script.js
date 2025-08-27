@@ -101,3 +101,70 @@ function callAlert(id) {
     callHistoryRecord.innerHTML = "";
   });
 }
+
+//Challenge Part- Copy
+
+function copyAlert(copy) {
+  // Get the h2 text
+  const copyItem = copy.parentElement.querySelector("h2").innerText;
+
+  // Copy to clipboard
+  navigator.clipboard
+    .writeText(copyItem)
+    .then(() => {
+      alert(copyItem + " is copied to clipboard!");
+    })
+    .catch((err) => {
+      console.error("Failed to copy: ", err);
+    });
+}
+
+const copyClass = document.getElementsByClassName("copyClass");
+const copyCount = document.getElementById("copyCount");
+let copyCountValue = 0;
+
+for (const copy of copyClass) {
+  copy.addEventListener("click", function () {
+    copyAlert(copy);
+    copyCountValue++;
+    copyCount.innerText = copyCountValue;
+  });
+}
+/* function copyAlert(copy) {
+  // go to parent div of the button
+  const copyItem = copy.parentElement.querySelector("h2");
+  // get its text
+  alert(copyItem.innerText + " is copying");
+}
+
+const copyClass = document.getElementsByClassName("copyClass");
+const copyCount = document.getElementById("copyCount");
+let copyCountValue = 0;
+
+// loop through buttons
+for (const copy of copyClass) {
+  copy.addEventListener("click", function () {
+    copyAlert(copy);
+    copyCountValue++;
+    copyCount.innerText = copyCountValue;
+  });
+} */
+
+// challenge part- copy
+
+/* function copyAlert(copy) {
+  const copyItem = copy.parentDiv.child(h2);
+  alert(copyItem + " is copying");
+}
+const copyClass = document.getElementsByClassName("copyClass");
+const copyCount = document.getElementById("copyCount");
+let copyCountValue = 0;
+
+for (const copy of copyClass) {
+  copy.addEventListener("click", function () {
+    copyAlert(copy);
+    copyCountValue++;
+    // console.log("total copy count is: " + copyCountValue);
+    copyCount.innerText = copyCountValue;
+  });
+} */
