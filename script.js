@@ -92,4 +92,12 @@ function callAlert(id) {
    </div>
     `;
   callHistoryRecord.appendChild(div);
+
+  //clear button of callHistory
+
+  const clearButton = document.getElementById("clearButton");
+  clearButton.addEventListener("click", function () {
+    callHistoryList = [];
+    callHistoryRecord.innerHTML = "";
+  });
 }
