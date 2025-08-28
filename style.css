@@ -103,7 +103,7 @@ body {
 }
 .copyClass:hover {
   background-color: black;
-  color: white;
+  color: white !important;
 }
 .icon1 img,
 .icon2 img {
