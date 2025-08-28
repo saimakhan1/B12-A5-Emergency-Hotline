@@ -61,7 +61,7 @@ function callAlert(id) {
     parentDiv = clicked.parentElement.parentElement;
   }
   // find h2 and p inside that parent
-  const h2Text = parentDiv.querySelector("h2")?.innerText || "";
+  const h2Text = parentDiv.querySelector("h2")?.innerText || ""; //Looks inside parentDiv. Finds the first <h2> element inside it. If there’s no <h2>, it returns null.
   const pText = parentDiv.querySelector("p")?.innerText || "";
 
   alert("📞Calling " + pText + " " + h2Text + "...");
@@ -109,6 +109,8 @@ function copyAlert(copy) {
   const copyItem = copy.parentElement.querySelector("h2").innerText;
 
   // Copy to clipboard
+  //navigator.clipboard → a built-in API in browsers that lets to copy and paste text. .
+  //writeText(copyItem) → copies the text stored in copyItem to the system clipboard.
   navigator.clipboard
     .writeText(copyItem)
     .then(() => {
