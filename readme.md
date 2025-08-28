@@ -1,7 +1,5 @@
 ---
-
 Assignment 5- readme.md (Questions and Answers)
-
 ---
 
 Question 1: What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
@@ -29,6 +27,7 @@ By using appendChild() we can insert the created element into the DOM.
 Example:
 
 const newDiv=document.createElement("div");
+
 document.body.appendChild('newDiv')
 
 ---
@@ -48,7 +47,9 @@ Answer 4:
 Event delegation is a pattern in JavaScript , where instead of attaching event listeners to multiple child elements, the event listener is attached to the parent element and uses event bubbling to catch events from its children.
 
 Importance of event delegation:
+
 i. Saves memory and speeds up performance- Instead of attaching many event listeners, attaching a single event listener on the parent is more efficient.
+
 ii. Handles dynamic content- new child elements added later will automatically work with the parent's event listener
 
 ---
