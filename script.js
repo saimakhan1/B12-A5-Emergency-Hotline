@@ -129,6 +129,6 @@ for (const copy of copyClass) {
   copy.addEventListener("click", function () {
     copyAlert(copy);
     copyCountValue++;
-    copyCount.innerText = copyCountValue; // counting the value
+    copyCount.innerText = copyCountValue;
   });
 }
