@@ -48,4 +48,5 @@ Answer 5:
 preventDefault() is used when we want to stop default action. For example , while working with HTML forms, preventDefault() prevents the form from automatically submitting.
 stopPropagation() stops the event from propagating (bubbling) up the DOM tree. 
 
+In short, it can be said that event.stopPropagation() stops the event from bubbling or capturing further, while event.preventDefault() prevents the browser’s default action for that event.
 ___________________________________________________________________________________________________
